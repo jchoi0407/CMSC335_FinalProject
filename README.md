@@ -1,4 +1,5 @@
 **Submitted by:** Junho Choi (jchoi120)
+
 **Group Members:** Junho Choi (jchoi120)
 
 **App Description:** A travel budget planning app that lets users enter trip details and estimated costs, converts the total to the destination currency using a live exchange rate API, and saves and retrieves plans by email.
