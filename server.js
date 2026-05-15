@@ -24,18 +24,7 @@ async function main() {
 
     app.listen(portNumber);
     console.log(`Web server started and running at http://localhost:${portNumber}`);
-    // process.stdin.write(prompt);
-    // process.stdin.on("readable", async function () {
-    //     const dataInput = process.stdin.read();
-    //     if (dataInput !== null) {
-    //         const command = dataInput.trim();
-    //         if (command === "stop") {
-    //             process.stdout.write("Shutting down the server\n");
-    //             mongoose.disconnect();
-    //             process.exit(0);
-    //         }
-    //     }
-    // });
+
     app.use("/", router);
     app.post("/reviewPage", async (request, response) => {
         const {
