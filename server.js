@@ -7,11 +7,8 @@ const router = require("./routes/router.js");
 
 require("dotenv").config({ path: path.resolve(__dirname, "credentials/.env") });
 
-process.stdin.setEncoding("utf8");
-
-const portNumber = process.argv[2] || process.env.PORT || 3000;
+const portNumber = process.env.PORT;
 const app = express();
-const prompt = "Stop to shutdown the server: ";
 
 app.set("view engine", "ejs");
 app.set("views", path.resolve(__dirname, "templates"));
@@ -27,18 +24,18 @@ async function main() {
 
     app.listen(portNumber);
     console.log(`Web server started and running at http://localhost:${portNumber}`);
-    process.stdin.write(prompt);
-    process.stdin.on("readable", async function () {
-        const dataInput = process.stdin.read();
-        if (dataInput !== null) {
-            const command = dataInput.trim();
-            if (command === "stop") {
-                process.stdout.write("Shutting down the server\n");
-                mongoose.disconnect();
-                process.exit(0);
-            }
-        }
-    });
+    // process.stdin.write(prompt);
+    // process.stdin.on("readable", async function () {
+    //     const dataInput = process.stdin.read();
+    //     if (dataInput !== null) {
+    //         const command = dataInput.trim();
+    //         if (command === "stop") {
+    //             process.stdout.write("Shutting down the server\n");
+    //             mongoose.disconnect();
+    //             process.exit(0);
+    //         }
+    //     }
+    // });
     app.use("/", router);
     app.post("/reviewPage", async (request, response) => {
         const {
