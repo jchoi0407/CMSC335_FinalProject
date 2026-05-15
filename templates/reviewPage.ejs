@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Page</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="code.js" defer></script>
+</head>
+
+<body>
+	<h1>Plan Detail</h1>
+    <div>
+        <h3>Trip Summary</h3>
+        <ul>
+            <li><strong>Name: </strong><%- name %></li>
+            <li><strong>Email: </strong><%- email %></li>
+            <li><strong>Date: </strong><%- date %></li>
+            <li><strong>From/To: </strong><%- from %> -> <%- destination %></li>
+        </ul>
+    </div>
+    <div>
+        <h3>Cost Breakdown</h3>
+        <ul>
+            <li><strong>Flight Cost: </strong><%- flightCost %></li>
+            <li><strong>Hotel Cost: </strong><%- hotelCost %></li>
+            <li><strong>Food & Other: </strong><%- otherCost %></li> 
+        </ul>
+        <strong>Total Cost: </strong><%- totalCost %>
+    </div>
+    <div>
+        <h3>Budget</h3>
+        <ul>
+            <li><strong>Budget Amount: </strong><%- budgetAmount %> <%- budgetCurrency %></li>
+            <li><strong>Total in Destination Currency: </strong><%- convertedTotal %> <%- desCurrency %></li>
+            <li><strong>Conversion Rate: </strong>1 <%- budgetCurrency %> = <%- conversionRate %> <%- desCurrency %></li>
+            <li><strong>Status: </strong><%- status %></li> 
+        </ul>
+    </div>
+
+	<button class="homeButton">Home</button>
+</body>
+</html>

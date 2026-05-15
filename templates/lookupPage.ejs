@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Look Up Page</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="code.js" defer></script>
+</head>
+
+<body>
+	<h1>Your Travel Plans</h1>
+	<form action="/processLookup" method="post">
+		<label><strong>Email: </strong><input type="text" name="email"></label><br>
+		<br>
+        
+		<button type="submit">Find My Plans</button>
+        <br><br>
+        <%- error %>
+	</form>
+    <hr>
+    <button class="homeButton">Home</button>
+</body>
+</html>

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: #f0f4f8;
+    color: #2d3748;
+    padding: 2.5rem 1.25rem;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #2b6cb0;
+    margin-bottom: 0.625rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+    color: #2b6cb0;
+    margin-bottom: 0.5rem;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    background-color: #2b6cb0;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.375rem;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+button:hover {
+    background-color: #2c5282;
+}
+
+button[type="reset"],
+button.homeButton {
+    background-color: #718096;
+    margin-left: 0.5rem;
+}
+
+button[type="reset"]:hover,
+button.homeButton:hover {
+    background-color: #4a5568;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.08);
+}
+
+fieldset {
+    border: 1px solid #cbd5e0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f7fafc;
+}
+
+legend {
+    font-size: 0.95rem;
+    color: #2d3748;
+    padding: 0 0.375rem;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #4a5568;
+    display: inline-block;
+    margin: 0.375rem 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 0.25rem;
+    padding: 0.375rem 0.625rem;
+    margin-left: 0.25rem;
+    background-color: #ffffff;
+    color: #2d3748;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2b6cb0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 0.95rem;
+    padding: 0.25rem 0;
+    border-bottom: 1px solid #e2e8f0;
+    color: #4a5568;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+div {
+    background-color: #ffffff;
+    border-radius: 0.625rem;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.06);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 1.25rem 0;
+}

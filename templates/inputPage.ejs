@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Page</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <h1>Let's plan your trip</h1>
+
+   <form action="/reviewPage" method="post">
+        <fieldset>
+            <legend><strong>Personal Info</strong></legend>
+            <label>Name:  <input type="text" id="name" name="name"></label>&nbsp;&nbsp;
+            <label>Email:  <input type="text" id="email" name="email"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Trip Info</strong></legend>
+            <label>Date:  <input type="date" id="date" name="date"></label>&nbsp;&nbsp;
+            <label>From:  <input type="text" id="departure" name="departure"></label>&nbsp;&nbsp;
+            <label>To:  <input type="text" id="destination" name="destination"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Budget</strong></legend>
+            <label>Budget Amount  <input type="number" id="budgetAmount" name="budgetAmount"></label>&nbsp;&nbsp;
+            <label>Budget Currency
+                <select id="budgetCurrency" name="budgetCurrency">
+                    <option value="USD">USD</option>
+                    <option value="KRW">KRW</option>
+                    <option value="EUR">EUR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="GBP">GBP</option>
+                    <option value="CAD">CAD</option>
+                </select>
+            </label>&nbsp;&nbsp;
+            <label>Destination Currency
+                <select id="desCurrency" name="desCurrency">
+                    <option value="USD">USD</option>
+                    <option value="KRW">KRW</option>
+                    <option value="EUR">EUR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="GBP">GBP</option>
+                    <option value="CAD">CAD</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Estimated Costs</strong></legend>
+            <label>Flight Cost:  <input type="number" id="flightCost" name="flightCost"></label>&nbsp;&nbsp;
+            <label>Hotel Cost:  <input type="number" id="hotelCost" name="hotelCost"></label>&nbsp;&nbsp;
+            <label>Food & Other Costs:  <input type="number" id="otherCost" name="otherCost"></label>
+        </fieldset>
+        <hr>
+        <button type="submit">Calculate & Save Your Plan</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
